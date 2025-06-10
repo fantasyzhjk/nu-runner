@@ -216,7 +216,7 @@ fn message(msg: &str) -> String {
             "Improper formatting. Format as \"`[command]`\"".to_string()
         }
         Err(HandlerError::ShellError(shell_error)) => {
-            format!("ShellError: {shell_error}")
+            format!("ShellError: {shell_error:?}")
         }
         Err(HandlerError::TimeoutError) => "运行超时 (5s).".to_string(),
     }
