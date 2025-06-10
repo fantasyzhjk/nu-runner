@@ -1,0 +1,18 @@
+[package]
+name = "nu-runner"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nu-cli = "0.104.1"
+nu-command = "0.104.0"
+nu-engine = "0.104.1"
+nu-parser = "0.104.1"
+nu-protocol = "0.104.1"
+nu-path = "0.104.1"
+rocket = "0.5.1"
+
+[patch.crates-io]
+calamine = { git = "https://github.com/prophittcorey/calamine", branch = "fix/zip-3.0" }
