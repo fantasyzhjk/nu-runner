@@ -1,4 +1,3 @@
-use nu_cli::Print;
 use nu_command::*;
 use nu_protocol::{
     engine::{EngineState, StateWorkingSet},
